@@ -1,22 +1,36 @@
-.Header{
-  background-color:var(--background-item-color);
+.Header {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   display: flex;
-  padding: 10px;
+  padding: 20px 30px;
   justify-content: space-between;
 }
 
-.Logo{
-  background: var(--highlight-color);
-  border-radius: 47px;
+.Logo {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border-radius: 10px;
   font-family: Anton, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 25px;
   text-align: center;
   letter-spacing: 0.165em;
   padding: 10px 30px;
 }
 
-.Header form input{
+.Header form input {
   border-radius: 10px;
   border: 0;
   width: 400px;
@@ -26,14 +40,19 @@
   font-size: 20px;
 }
 
-.Header form button{
-  background-color: var(--highlight-color);
+.Header form button {
+  background-color: #004e92;
+  color: #fff;
   border: none;
   border-radius: 10px;
   height: 2rem;
   width: 100px;
   font-family: Anton, sans-serif;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   cursor: pointer;
+}
+.header-search{
+  align-items: center;
+  justify-content: center;
 }

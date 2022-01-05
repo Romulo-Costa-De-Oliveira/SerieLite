@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=wap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=wap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=wap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=wap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .App {
-  background-color: #131313;
+  background: #004e92;
+  
   min-height: 100vh;
-  text-align: center;
+  width: 100%;
 
-  --background-item-color: #4F4F4F;
-  --highlight-color: #1E90FF;
-  --primary-color: #8B0000;
+  --background-item-color: #4f4f4f;
+  --highlight-color: #1e90ff;
+  --primary-color: #8b0000;
 }
-.content{
+
+.tabs {
   display: flex;
+  width: 100%;
 }
 
-.nav-link {
-  color: var(--highlight-color);
-  font-weight: bold;
-  font-size: 20px;
-  margin: 20px;
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a {
   text-decoration: none;
-  opacity: .4;
+  display: flex;
+  margin: 20px;
+  padding: 5px;
 }
-.nav-link:hover {
-  opacity: 1;
-}
-.nav-link.active {
-  opacity: 1;
-  border-bottom: solid 1px var(--highlight-color);
-}
+

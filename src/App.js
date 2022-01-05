@@ -1,23 +1,30 @@
 import React from "react";
 import './App.css';
-import { BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from "./components/header/Header";
 import News from "./pages/news/News";
 import About from "./pages/about/About";
+import Search from "./pages/search/Search";
+import TopRated from "./pages/toprated/TopRated";
 
-function App() {
+function App(props) {
   return (
+
     <div className="App">
-      <Header />
+
       <BrowserRouter>
-        <NavLink to="/news" className="nav-link">Lançamentos</NavLink>
-        <NavLink to="/about"className="nav-link">Sobre</NavLink>
-        <Routes>
-          <Route path='/news' element={<News/>}/>
-          <Route path='/about' element={<About />} />
+        <Header />
+      
+        <Switch>
           
-        </Routes>
+          <Route exact path='/' component={News} />
+          <Route path='/news' component={News} />
+          <Route path='/toprated' component={TopRated} />
+          <Route path='/search' component={Search} />
+          <Route path='/about' component={About} />
+
+        </Switch>
       </BrowserRouter>
 
     </div>

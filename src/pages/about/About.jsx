@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './style.css';
+import Menu from '../../components/menu/Menu';
 
 
 
 export default function About() {
     return (
-        <div className="title">
-            <h1>About</h1>
-            <p className="description">Lorem ipsum dolor sit amet, consectetur adip</p>
-        </div>
+        <Fragment>
+            <Menu />
+            <div className="title">
+                <h1>About</h1>
+                <p className="description">Lorem ipsum dolor sit amet, consectetur adip</p>
+            </div>
+        </Fragment>
     );
 }

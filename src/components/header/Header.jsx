@@ -8,8 +8,8 @@ function Header(props) {
     const [search, setSearch] = useState("");
 
     function buscar(e) {
-        e.preventDefault()
         props.history.push("/search")
+        console.log(e)
     }
 
     return (
@@ -20,7 +20,7 @@ function Header(props) {
                     type="text"
                     className="search"
                     name="query"
-                    id="query"
+                    id="search"
                     onChange={e => setSearch(e.target.value)}
                 />
                 <button type="submit">procurar</button>

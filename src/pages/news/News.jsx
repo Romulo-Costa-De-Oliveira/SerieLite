@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import api, { api_options } from '../../services/api';
+import api from '../../services/api';
 import CardSerie from '../../components/cardSerie/CardSerie';
 import Menu from '../../components/menu/Menu';
 
@@ -7,15 +7,16 @@ export default function News() {
 
     const [series, setSeries] = useState([])
 
-    useEffect(() => load(), [])
+
+    useEffect(() => { load() }, [])
 
     async function load() {
         try {
-            const resposta = await api.get("/tv/airing_today", api_options())
+            const resposta = await api.get("/tv/airing_today?api_key="+ process.env.REACT_APP_API_KEY + "&language=" + process.env.REACT_APP_LANG)
             setSeries(resposta.data.results)
-            console.log(resposta)
+          
         } catch (erro) {
-            console.log(erro);
+            console.log(erro)
         }
     }
 

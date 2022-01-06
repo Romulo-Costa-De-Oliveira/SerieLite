@@ -17,10 +17,11 @@
     box-shadow: 0 22px 0 -20px #fff;
     opacity: 1;
     color: #fff;
+    border-radius: 10px;
   }
   
   .TabLink:hover{
-    background-color: #00000022;
+    background-color: #e28b0955;
     border-radius: 10px;
     box-shadow: 0 24px 0 -22px #FFF;
     opacity: 1;

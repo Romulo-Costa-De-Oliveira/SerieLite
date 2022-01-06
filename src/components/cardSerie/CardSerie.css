@@ -7,12 +7,30 @@
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #434343, #000000);
 
-  color: #fff;
+  
+  color: #6e0169; 
+  color: -webkit-linear-gradient(
+    to top,
+    #0b8793,
+    #360033
+  );
+  color: linear-gradient(
+    to top,
+    #0b8793,
+    #360033
+  );
+
   max-width: 200px;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   margin: 15px;
   align-items: center;
+  transform: scale(0.95);
+  transition: all ease 0.2s;
+}
+
+.card-serie:hover{
+  transform: scale(1);
 }
 
 .poster-image {
@@ -20,6 +38,7 @@
   width: 200px;
   height: 300px;
   border-radius: 10px 10px 0 0;
+  box-shadow: inset 0px -10px 20px rgb(0, 0, 0);
 }
 
 .fav-btn {
@@ -49,17 +68,17 @@ h2 {
 }
 
 .btn-detail {
-  background: #333333; /* fallback for old browsers */
+  background: #360033; 
   background: -webkit-linear-gradient(
     to top,
-    #dd1818,
-    #333333
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    #0b8793,
+    #360033
+  );
   background: linear-gradient(
     to top,
-    #dd1818,
-    #333333
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #0b8793,
+    #360033
+  );
 
   color: #fff;
   border-radius: 10px;

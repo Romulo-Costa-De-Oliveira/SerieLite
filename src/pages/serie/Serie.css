@@ -1,0 +1,70 @@
+.hero {
+  position: relative;
+  display: flex;
+  z-index: 5;
+}
+
+.hero .bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.2;
+  box-shadow: inset 0px -100px 100px #000;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  align-self: flex-start;
+  opacity: 0.5;
+  transition: all 0.5s;
+  margin: 15px;
+}
+
+.btn-back:hover {
+  opacity: 1;
+}
+
+.hero img {
+  border-radius: 15px;
+  max-height: 400px;
+  margin: 15px;
+}
+
+.serie-info {
+  color: #fff;
+  margin-left: 15px;
+}
+
+.serie-info h1 {
+  color: #fff;
+}
+
+.serie-info p {
+  width: 70%;
+}
+
+.serie-info span {
+  color: #ffff00;
+}
+
+.seasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seasons h2 {
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  letter-spacing: .3rem;
+}

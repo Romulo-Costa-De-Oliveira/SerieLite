@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
+
 import "./CardSerie.css";
 
 export default function CardSerie({ serie }) {
@@ -7,25 +9,21 @@ export default function CardSerie({ serie }) {
     const data = new Date(serie.first_air_date)
     const data_lancamento = data.toLocaleDateString()
     return (
-        <div className="card-serie">
-            <span className="material-icons fav-btn">add_circle_outline</span>
-            <div
-                className="poster-image"
-                style={{ backgroundImage: `url(${imgUrl}${serie.poster_path})` }}>
-            </div>
-            <div className="card-detail">
-                <div className="score"><span className="material-icons">star</span>
-                    {nota}
+        <NavLink to={`/serie/${serie.id}`} >
+            <div className="card-serie">
+                <span className="material-icons fav-btn">add_circle_outline</span>
+                <div
+                    className="poster-image"
+                    style={{ backgroundImage: `url(${imgUrl}${serie.poster_path})` }}>
                 </div>
-                <h1>{serie.name}</h1>
-                <h2>{data_lancamento}</h2>
-            </div>
-            <div className="buttom">
-                <a hfef="#" className="btn-detail">
-                    <span className="material-icons">play_arrow</span>
-                    detalhes
-                </a>
-            </div>
-        </div >
+                <div className="card-detail">
+                    <div className="score"><span className="material-icons">star</span>
+                        {nota}
+                    </div>
+                    <h1>{serie.name}</h1>
+                    <h2>{data_lancamento}</h2>
+                </div> 
+            </div >
+        </NavLink>
     );
 }

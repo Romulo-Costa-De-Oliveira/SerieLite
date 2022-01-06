@@ -1,0 +1,26 @@
+.card-season{
+    display: flex;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding: 1rem 0;
+}
+
+.card-season img{
+    max-width: 100px;
+    max-height: 150px;
+    border-radius: 5px;
+}
+
+.season-info{
+    margin-left: 2rem;
+    color: #fff;
+}
+
+.season-info h3{
+    color: #4e4bcf;
+  
+}
+
+.season-info .eps-count{
+    font-weight: bold;
+}

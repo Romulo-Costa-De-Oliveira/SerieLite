@@ -15,7 +15,7 @@ function Header(props) {
     return (
         <div className="Header">
             <div className="Logo">SerieLite</div>
-            <form onSubmit={buscar}>
+            <form className="searchBar" onSubmit={buscar}>
                 <input
                     type="text"
                     className="search"
@@ -23,7 +23,7 @@ function Header(props) {
                     id="search"
                     onChange={e => setSearch(e.target.value)}
                 />
-                <button type="submit">procurar</button>
+                <button type="submit"><span className="material-icons" type="submit">search</span></button>
             </form>
         </div>
     )

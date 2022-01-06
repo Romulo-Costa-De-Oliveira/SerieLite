@@ -10,7 +10,7 @@ export default function About() {
             <Menu />
             <div className="title">
                 <h1>About</h1>
-                <p className="description">Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p className="description">Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adip</p>
             </div>
         </Fragment>
     );

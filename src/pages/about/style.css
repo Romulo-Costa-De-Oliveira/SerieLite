@@ -1,0 +1,7 @@
+.title h1 {
+  color: var(--highlight-color);
+}
+
+.description {
+  color: #fff;
+}

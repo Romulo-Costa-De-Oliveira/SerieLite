@@ -1,0 +1,93 @@
+.card-serie {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000);
+
+  
+  color: #6e0169; 
+  color: -webkit-linear-gradient(
+    to top,
+    #0b8793,
+    #360033
+  );
+  color: linear-gradient(
+    to top,
+    #0b8793,
+    #360033
+  );
+
+  max-width: 200px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+  align-items: center;
+  transform: scale(0.95);
+  transition: all ease 0.2s;
+}
+
+.card-serie:hover{
+  transform: scale(1);
+}
+
+.poster-image {
+  background-image: url("https://www.themoviedb.org/t/p/w200/47RazdqbtMmDxKHskObbHkc2D3o.jpg");
+  width: 200px;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 0px -10px 20px rgb(0, 0, 0);
+}
+
+.fav-btn {
+  position: absolute;
+  padding: 8px;
+}
+
+.card-detail {
+  text-align: left;
+  padding: 15px;
+  height: 150px;
+}
+
+.card-detail span {
+  color: #fdc830;
+}
+
+.card-detail h2 {
+  font-size: 1rem;
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+.card-detail h1,
+h2 {
+  margin: 0px;
+}
+
+.btn-detail {
+  background: #360033; 
+  background: -webkit-linear-gradient(
+    to top,
+    #0b8793,
+    #360033
+  );
+  background: linear-gradient(
+    to top,
+    #0b8793,
+    #360033
+  );
+
+  color: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
